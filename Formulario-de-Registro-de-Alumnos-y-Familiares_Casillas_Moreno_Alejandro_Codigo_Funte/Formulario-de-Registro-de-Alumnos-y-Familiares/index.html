@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Oficial - Anexo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+</head>
+
+<body>
+
+    <h1>Registro de Alumno</h1>
+
+    <form id="formularioOficial">
+
+        <fieldset>
+            <legend>1. Datos del Alumno</legend>
+            <ul>
+                <li>
+                    <label>Nombre</label>
+                    <input type="text" id="nombrealumno" placeholder="Escribe tu nombre" required>
+                </li>
+                <li>
+                    <label>Apellidos</label>
+                    <input type="text" id="apellidosalumno" placeholder="Escribe tu apellidos" required>
+                </li>
+                <li>
+                    <label>NIF</label>
+                    <input type="text" id="nifalumno" placeholder="Introduce tu NIF" required>
+                </li>
+                <li>
+                    <label>Lengua Materna</label>
+                    <select id="lenguamaternaalumno" required>
+                        <option value="">Elegir lengua materna</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Idiomas Conocidos</label>
+                    <fieldset class="campo-multiseleccion">
+                        <div id="checkboxesidiomasalumno" class="checkboxes-contenedor">
+                            <!-- Los checkboxes aparecerán aquí -->
+                        </div>
+                        <small class="texto-ayuda">Selecciona todos los idiomas que conoces</small>
+                    </fieldset>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Familiar Asociado</legend>
+            <ul>
+                <li>
+                    <label>Nombre</label>
+                    <input type="text" id="nombrefamiliar" placeholder="Escribe el nombre del familiar" required>
+                </li>
+                <li>
+                    <label>Apellidos</label>
+                    <input type="text" id="apellidosfamiliar" placeholder="Escribe los apellidos del familiar" required>
+                </li>
+                <li>
+                    <label>NIF</label>
+                    <input type="text" id="niffamiliar" placeholder="Introduce tu NIF" required>
+                </li>
+                <li>
+                    <label>Profesión</label>
+                    <select id="profesionFamiliar" required>
+                        <option value="">Selecciona la profesion</option>
+                        <!--Las opciones se encuentra en el archivo datos.json-->
+                    </select>
+                </li>
+                <li>
+                    <label>Ciudad de Nacimiento</label>
+                    <select id="ciudadnacimientofamiliar" required>
+                        <option value="">Seleccione Ciudad del familiar</option>
+                        <!--Las opciones se encuentra en el archivo datos.json-->
+                    </select>
+                </li>
+                <li>
+                    <label>Lengua Materna</label>
+                    <select id="lenguamaternafamiliar" required>
+                        <option value="">Seleccione la lengua materna del familiar</option>
+                        <!--Las opciones se encuentra en el archivo datos.json-->
+                    </select>
+                </li>
+                <li>
+                    <label>Idiomas Conocidos del Familiar</label>
+                    <fieldset class="campo-multiseleccion">
+                        <div id="checkboxesidiomasfamiliar" class="checkboxes-contenedor">
+                            <!-- Los checkboxes aparecerán aquí -->
+                        </div>
+                        <small class="texto-ayuda">Selecciona todos los idiomas que conozca el familiar</small>
+                    </fieldset>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Dirección Actual</legend>
+            <ul>
+                <li>
+                    <label>País</label>
+                    <select id="pais" required>
+                        <option value="">Seleccione País</option>
+                        <!--Las opciones se encuentra en el archivo datos.json-->
+                    </select>
+                </li>
+                <li>
+                    <label>Ciudad</label>
+                    <select id="ciudad" required>
+                        <option value="">Seleccione País primero</option>
+                        <!--Las opciones se encuentra en el archivo datos.json-->
+                    </select>
+                </li>
+                <li>
+                    <label>Población</label>
+                    <select id="poblacion" required>
+                        <option value="">Seleccione Ciudad primero</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Dirección Completa</label>
+                    <input type="text" id="direccionTexto" placeholder="Escribe tu dirección completa" required>
+                </li>
+                <li>
+                    <label>Código Postal</label>
+                    <input type="text" id="codigoPostal" placeholder="Escribe codigo postal" maxlength="5" required>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Datos Académicos</legend>
+            <ul>
+                <li>
+                    <label>Colegio de Procedencia</label>
+                    <input type="text" id="colegioProcedencia" placeholder="Escribe colegio de procedencia" required>
+                </li>
+                <li>
+                    <label>Nivel de estudios alcanzado:</label>
+                    <select id="nivelAlcanzado">
+                        <option value="">Seleccione el nivel de estudio alcanzado </option>
+                    </select>
+                </li>
+                <li>
+                    <label>Idiomas estudiados</label>
+                    <fieldset class="campo-multiseleccion">
+                        <div id="checkboxesidiomasestudiados" class="checkboxes-contenedor">
+                            <!-- Los checkboxes aparecerán aquí -->
+                        </div>
+                        <small class="texto-ayuda">Idiomas que has estudiado académicamente</small>
+                    </fieldset>
+                </li>
+                <li>
+                    <label>Nivel de estudio solicitado:</label>
+                    <select id="nivelSolicitado">
+                        <option value="">Seleccione el nivel de estudio solicitado</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Información Médica</legend>
+            <ul>
+                <li>
+                    <label>Alergias</label>
+                    <fieldset class="campo-multiseleccion">
+                        <div id="checkboxesalergias" class="checkboxes-contenedor">
+                            <!-- Los checkboxes aparecerán aquí -->
+                        </div>
+                        <small class="texto-ayuda">Opcional: selecciona si tienes alguna alergia</small>
+                    </fieldset>
+                </li>
+                <li>
+                    <label>Medicación actual:</label>
+                    <textarea id="medicacion" rows="2"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <button type="submit" id="btnEnviar">Generar Ficha Oficial</button>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

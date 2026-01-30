@@ -1,0 +1,38 @@
+{
+"IdiomasConocidosAlumno": ["Español", "Inglés", "Francés"],
+"IdiomasConocidosFamiliares": ["Español", "Inglés", "Francés"],
+"IdiomasEstudiados": ["Alemán", "Chino", "Italiano", "Portugués", "Ruso"],
+
+"NiveldeEstudio": ["Primaria", "Secundaria", "Bachillerato", "FP", "Universidad"],
+
+"Profesiones": ["Ingeniero", "Médico", "Abogado", "Profesor", "Artista"],
+
+"Ubicaciones": [
+    {
+      "pais": "España",
+      "ciudad": [
+        {
+          "nombre": "Madrid",
+          "poblacion": ["Madrid Capital", "Getafe", "Leganés"]
+        },
+        {
+          "nombre": "Sevilla",
+          "poblacion": ["Sevilla Capital", "Dos Hermanas", "Utrera"]
+        }
+      ]
+    },
+    {
+      "pais": "Francia",
+      "ciudad": [
+        {
+          "nombre": "París",
+          "poblacion": ["París Capital", "Versalles"]
+        }
+      ]
+    }
+  ],
+
+"Alergias": ["Polen", "Ácaros", "Alimentos", "Medicamentos", "Animales"],
+
+"ciudadnacimento": ["Madrid", "Barcelona", "Valencia", "Sevilla", "Zaragoza"]
+}
